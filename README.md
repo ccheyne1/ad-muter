@@ -1,6 +1,6 @@
 # Ad Muter
 
-A Raspberry Pi camera watches a TV for an **Ad** badge and sends one learned infrared mute command when an ad starts and another when it ends.
+Ad Muter automatically mutes your TV when it detects ads and restores sound when they end, using a Raspberry Pi, a camera, and infrared control.
 
 The current preset recognizes Hulu's light Ad badge using normalized glyph descriptors. It finds candidate badges in each current image, measures the TV bezel, and uses a native-resolution search for faint lettering. There is no fixed camera crop. Brief geometry ambiguity can use a confirmed bezel from the preceding five seconds, but only if one strong measurement still matches in the current frame.
 
