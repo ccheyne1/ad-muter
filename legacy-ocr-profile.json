@@ -1,0 +1,6 @@
+{
+  "name": "Generic Ad OCR — automatic screen localization",
+  "search_corners": ["top_right"],
+  "min_confidence": 55,
+  "ocr_budget_seconds": 2.4
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Hulu light Ad badge — learned glyphs and automatic screen localization",
+  "marker_model": "models/hulu-marker-v1.npz",
+  "search_corners": ["top_right"],
+  "min_confidence": 55,
+  "ocr_budget_seconds": 2.4,
+  "marker_budget_seconds": 2.0
+}

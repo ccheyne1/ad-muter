@@ -1,0 +1,6 @@
+{
+  "name": "Automatic screen localization — all four corners",
+  "search_corners": ["top_right", "top_left", "bottom_right", "bottom_left"],
+  "min_confidence": 55,
+  "ocr_budget_seconds": 2.4
+}

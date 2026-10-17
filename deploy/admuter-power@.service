@@ -1,0 +1,19 @@
+[Unit]
+Description=Ad Muter remote power listener
+After=local-fs.target
+
+[Service]
+Type=simple
+User=%i
+SupplementaryGroups=video
+WorkingDirectory=/home/%i/ad-muter
+ExecStart=/home/%i/ad-muter/.venv/bin/python /home/%i/ad-muter/power_watcher.py
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+KillMode=mixed
+NoNewPrivileges=true
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
